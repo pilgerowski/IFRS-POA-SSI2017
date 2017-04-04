@@ -1,23 +1,29 @@
+/*
+ *
+ * Escreva um programa que lê três numeros e imprima o resultado da multiplicação. 
+ *
+ */
+
 #include <stdio.h>
 
 int main()
 {
-    float num1, num2, num3, multiplicacao;
+    float fNum1, fNum2, fNum3, fMultiplicacao;
     
     printf("Cálculo de multiplicação\n\n");
     
     printf("Entre com o primeiro número: ");
-    scanf("%f", &num1);
+    scanf("%f", &fNum1);
     
     printf("Entre com o segundo número: ");
-    scanf("%f", &num2);
+    scanf("%f", &fNum2);
 
     printf("Entre com o terceiro número: ");
-    scanf("%f", &num3);
+    scanf("%f", &fNum3);
     
-    multiplicacao = num1 * num2 * num3;
+    fMultiplicacao = fNum1 * fNum2 * fNum3;
     
-    printf("A multiplicação é de %.2f\n", multiplicacao);
+    printf("A multiplicação é de %.2f\n", fMultiplicacao);
 
     return 0;
 }

@@ -1,22 +1,28 @@
-// FaÃ§a um programa que faÃ§a a conversÃ£o de um valor lido em reais para um valor em dÃ³lares. Deve ser informada a cotaÃ§Ã£o do dÃ³lar no dia pelo usuÃ¡rio.
+/*
+ *
+ * Faça um programa que faça a conversão de um valor lido em reais para 
+ * um valor em dólares. Deve ser informada a cotação do dólar no dia pelo 
+ * usuário.
+ *
+ */
 
 #include <stdio.h>
 
 int main()
 {
-    float valorReais, valorDolar, cotacaoDolar;
+    float fValorReais, fValorDolar, fCotacaoDolar;
     
     printf("Conversão Real para Dólares\n\n");
     
     printf("Entre com o valor em reais: R$ ");
-    scanf("%f", &valorReais);
+    scanf("%f", &fValorReais);
     
     printf("Entre com a cotação do dólar: R$ ");
-    scanf("%f", &cotacaoDolar);
+    scanf("%f", &fCotacaoDolar);
 
-    valorDolar = valorReais / cotacaoDolar;
+    fValorDolar = fValorReais / fCotacaoDolar;
     
-    printf("O valor em dólares é de US$ %.2f\n", valorDolar);
+    printf("O valor em dólares é de US$ %.2f\n", fValorDolar);
 
     return 0;
 }
