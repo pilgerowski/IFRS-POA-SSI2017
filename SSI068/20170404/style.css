@@ -1,0 +1,52 @@
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+label { 
+	float: left; 
+	width: 15%; 
+	padding: 20px 2px 2px 2px;
+	text-align: right; 
+}
+
+input[type=text], input[type=url] {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=time], input[type=datetime-local], select {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=range] {	
+	margin: 20px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+form {	
+	margin: 5%;
+	padding: 5%; 
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
