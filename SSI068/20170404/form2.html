@@ -26,7 +26,35 @@
 		</p>
 		<p>
 			<label for="site">Site</label>
-			<input type="text" name="site" />
+			<input type="url" name="site" />
+		</p>
+		<p>
+			<label for="numeroDeItens">Nr. de itens</label>
+			<select name="numeroDeItens">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			</select>
+			(1-10)
+		</p>
+		<p>
+			<label for="hora">Hora</label>
+			<input name="hora" type="time" />
+		</p>
+		<p>
+			<label for="tamanho">Tamanho</label>
+			<input name="tamanho" type="range" min="1" max="100" value="0" /> cm
+		</p>
+		<p>
+			<label for="data">Data</label>
+			<input name="data" type="datetime-local" />
 		</p>
 		<p>
 			<label for="enviar"></label>
