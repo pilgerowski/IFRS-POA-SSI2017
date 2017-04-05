@@ -1,0 +1,44 @@
+﻿<html>
+<head> 
+	<!-- HTML 4 -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- HTML5 -->
+	<meta charset="utf-8"/>
+	<title>Formulário 1</title>
+</head>
+<body>
+	<h1>Formulário de Inscrição</h1>
+	<h3>Preencha seus dados</h3>
+	<form action="gravar_dados.php" method="post">
+		<p>
+			<label for="nome">Nome: </label>
+			<input type="text" name="nome" size=35 />
+		</p>
+		<p>
+			<label for="email">E-mail: </label>
+			<input type="text" name="email" size=35 />
+		</p>
+		<p>
+			<label for="endereco">Endereço: </label>
+			<input type="text" name="endereco" size=48 />
+		</p>
+		<p>
+			<label for="cidade">Cidade: </label>
+			<input type="text" name="cidade" size=50 />
+		</p>
+		<p>
+			<label for="telefone-ddd">Telefone: </label>
+			<input type="tel" name="telefone-ddd" size=3 />
+			<input type="tel" name="telefone-numero" size=9 />
+		</p>
+		<p>
+			<label for="usuario">Usuário: </label>
+			<input type="text" name="usuario" size=18 />
+		<p>
+			Senha:
+			<input type="password" name="senha" size=20 />
+		</p>
+		<input type="submit" name="enviar" value="Finalizar minha inscrição" />
+	</form>
+</body>
+</html>
