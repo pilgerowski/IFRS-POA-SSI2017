@@ -24,7 +24,7 @@ int main() {
     unsigned int    iContadorMenores = 0;
     unsigned int    iContadorCinefilos = 0;
     unsigned int    iContadorGostamDeComedia = 0;
-    unsigned int    iContadorMenoresCinefilosQueGostamDeComedia;
+    unsigned int    iContadorMenoresCinefilosQueGostamDeComedia = 0;
     
     unsigned int    iSomaTotalIdadeEntrevistados = 0;
     float           fMediaDeIdade;
@@ -37,13 +37,13 @@ int main() {
         
         do {
             printf("Idade: ");
-            scanf("%d", iIdadeEntrevistado);
+            scanf("%d", &iIdadeEntrevistado);
             
             bValorValido = ( iIdadeEntrevistado > 0 );
             if(!bValorValido) {
                 printf("Valor inválido. Preencha novamente.\n");
             }
-        } while(bValorValido);
+        } while(!bValorValido);
         
         iSomaTotalIdadeEntrevistados += iIdadeEntrevistado;
         if( iIdadeEntrevistado < 18 ) {
@@ -51,14 +51,14 @@ int main() {
         }
         
         do {
-            printf("Genero de filme preferido (1 - drama, 2 - comedia, 3 - suspense, 4 - aventura):");
-            scanf("%d",iGeneroPreferido);
+            printf("Genero de filme preferido (1 - drama, 2 - comedia, 3 - suspense, 4 - aventura): ");
+            scanf("%d", &iGeneroPreferido);
             
             bValorValido = ( iGeneroPreferido >= 1 && iGeneroPreferido <= 4 );
             if(!bValorValido) {
                 printf("Valor inválido. Preencha novamente.\n");
             }
-        } while(bValorValido);
+        } while(!bValorValido);
         
         if( iGeneroPreferido == 2 ) {
             iContadorGostamDeComedia++;
@@ -66,26 +66,26 @@ int main() {
         
         do {
             printf("Costuma ir ao cinema (1 - sim, 2 - nao): ");
-            scanf("%d",iCostumaIrNoCinema);
+            scanf("%d", &iCostumaIrNoCinema);
             
             bValorValido = ( iCostumaIrNoCinema == 1 || iCostumaIrNoCinema == 2 );
             if(!bValorValido) {
                 printf("Valor inválido. Preencha novamente.\n");
             }
-        } while(bValorValido);
+        } while(!bValorValido);
         
         if( iCostumaIrNoCinema == 2 ) {
             iContadorCinefilos++;
         }
         do {
-            printf("Eh socio de alguma locadora (1 - sim, 2 - não)");
-            scanf("%d",iSocioDeLocadora);
+            printf("Eh socio de alguma locadora (1 - sim, 2 - não): ");
+            scanf("%d", &iSocioDeLocadora);
             
             bValorValido = ( iSocioDeLocadora == 1 || iSocioDeLocadora == 2 );
             if(!bValorValido) {
                 printf("Valor inválido. Preencha novamente.\n");
             }
-        } while(bValorValido);
+        } while(!bValorValido);
         
         if( iIdadeEntrevistado < 18 && iGeneroPreferido == 2 && iCostumaIrNoCinema == 2) {
             iContadorMenoresCinefilosQueGostamDeComedia++;
@@ -95,8 +95,7 @@ int main() {
     
     fMediaDeIdade = iSomaTotalIdadeEntrevistados / iNumeroDeEntrevistados;
     printf("Media de idade dos entrevistados: %.2f", fMediaDeIdade );
-    printf("Numero de entrevistados que costumam ir ao cinema, que preferem filmes de comédia e que possuem menos de 18 anos: %d", iContadorMenoresCinefilosQueGostamDeComedia);
+    printf("Numero de entrevistados que costumam ir ao cinema, que preferem filmes de comédia e que possuem menos de 18 anos: %d\n",
+	iContadorMenoresCinefilosQueGostamDeComedia);
     
 }
-
-
