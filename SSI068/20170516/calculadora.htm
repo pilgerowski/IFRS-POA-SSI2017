@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Language" content="pt-br">
+
+<html>
+	<head>
+		<title>Calculadora</title>		
+		<style>
+		<!--
+			body{
+				font-family: verdana;
+				text-align: center;
+			}
+			.fatores,
+			.operadores,
+			.resultado {
+				margin: 0.5cm;
+				padding: 0.5cm; 
+			}
+		-->
+		</style>
+		<script language="JavaScript">
+		<!--
+			function calcula(nOperacao) {
+			
+				var d = document.formulario;
+				var nFator1 = Number(d.fator1.value);
+				var nFator2 = Number(d.fator2.value);
+				
+				switch(nOperacao) {
+					case 1: // Adição
+						nResultado = nFator1 + nFator2;
+						break;
+					case 2:	// Multiplicação		
+						nResultado = nFator1 * nFator2;
+						break;
+					case 3: // Subtração
+						nResultado = nFator1 - nFator2;
+						break;
+					case 4: // Divisão
+						nResultado = nFator1 / nFator2;
+						break;
+					case 5: // Módulo
+						nResultado = nFator1 % nFator2;
+						break;
+				}
+				
+				d.resultado.value = nResultado;
+				
+				return TRUE;
+			}
+		-->
+		</script>
+	</head>	
+	<body>
+		<h1>Calculadora</h1>
+		
+		<form name="formulario">
+			<div class="fatores">
+				<label for="fator1">1º fator:</label>
+				<input type="number" name="fator1" step="0.01">
+				<br />
+				<br /> 
+				<label for="fator2">2º fator:</label>
+				<input type="number" name="fator2" step="0.01">
+			</div>
+			<div class="operadores">
+				<strong onmouseover="calcula(1)">[ + ]</strong> 
+				<strong onmouseover="calcula(2)">[ * ]</strong> 
+				<strong onmouseover="calcula(3)">[ - ]</strong> 
+				<strong onmouseover="calcula(4)">[ / ]</strong> 
+				<strong onmouseover="calcula(5)">[ % ]</strong> 
+			</div>
+			<div class="resultado">
+				<label for="resultado">Resultado:</label>
+				<input type="number" name="resultado" step="0.01">
+			</div>
+		</form>
+	</body>
+</html>
