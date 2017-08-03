@@ -11,3 +11,11 @@ Disciplinas cursadas em 2017 / 1 :
 * SSI043 - Interação Homem Computador
 * SSI068 - Construção de Páginas Web I
 * SSI069 - Fundamentos da Computação
+
+Disciplinas cursadas em 2017 / 2 :
+* SSI044 - Estruturas de Dados
+* SSI045 - Banco de Dados I
+* SSI046 - Linguagens de Programação II
+* SSI047 - Engenharia de Software I
+* SSI048 - Construção de Páginas Web II
+
