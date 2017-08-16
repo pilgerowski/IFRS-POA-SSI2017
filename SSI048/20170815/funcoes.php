@@ -12,14 +12,14 @@ function ehPrimo($num) {
 	if (ehPar ( $num )) {
 		return false;
 	}
-	$raiz = ( int ) sqrt ( $num );
+	$raiz = 1 + ( int ) sqrt ( $num );
 	$impar = 3;
 	do {
 		if ($num % $impar == 0) {
 			return false;
 		}
 		$impar = $impar + 2;
-	} while ( $impar < $num );
+	} while ( $impar < $raiz );
 	return true;
 }
 function proximoPrimo($num) {
