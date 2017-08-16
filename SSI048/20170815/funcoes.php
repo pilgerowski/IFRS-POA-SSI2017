@@ -3,6 +3,9 @@ function ehPar($num) {
 	return ($num % 2 == 0);
 }
 function ehPrimo($num) {
+	if ($num < 2) {
+		return false;
+	}
 	if ($num == 2 || $num == 3) {
 		return true;
 	}
