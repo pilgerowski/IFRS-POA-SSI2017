@@ -3,20 +3,23 @@ function ehPar($num) {
 	return ($num % 2 == 0);
 }
 function ehPrimo($num) {
+	if ($num < 2) {
+		return false;
+	}
 	if ($num == 2 || $num == 3) {
 		return true;
 	}
 	if (ehPar ( $num )) {
 		return false;
 	}
-	$raiz = ( int ) sqrt ( $num );
+	$raiz = 1 + ( int ) sqrt ( $num );
 	$impar = 3;
 	do {
 		if ($num % $impar == 0) {
 			return false;
 		}
 		$impar = $impar + 2;
-	} while ( $impar < $num );
+	} while ( $impar < $raiz );
 	return true;
 }
 function proximoPrimo($num) {
@@ -29,12 +32,12 @@ function proximoPrimo($num) {
 		default :
 			if (ehPar ( $num ))
 				$impar = $num + 1;
-			else
-				$impar = $num + 2;
-			while ( ! ehPrimo ( $impar ) ) {
-				$impar = $impar + 2;
-			}
-			return $impar;
+				else
+					$impar = $num + 2;
+					while ( ! ehPrimo ( $impar ) ) {
+						$impar = $impar + 2;
+					}
+					return $impar;
 	}
 }
 function obterRelacaoDeNumerosPrimos($inicio, $fim) {
@@ -83,5 +86,3 @@ function somarValoresDoVetor($vetor) {
 	}
 	return $somador;
 }
-	
-	
