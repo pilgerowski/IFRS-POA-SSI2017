@@ -32,12 +32,12 @@ function proximoPrimo($num) {
 		default :
 			if (ehPar ( $num ))
 				$impar = $num + 1;
-				else
-					$impar = $num + 2;
-					while ( ! ehPrimo ( $impar ) ) {
-						$impar = $impar + 2;
-					}
-					return $impar;
+			else
+				$impar = $num + 2;
+			while ( ! ehPrimo ( $impar ) ) {
+				$impar = $impar + 2;
+			}
+			return $impar;
 	}
 }
 function obterRelacaoDeNumerosPrimos($inicio, $fim) {
